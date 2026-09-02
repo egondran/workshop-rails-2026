@@ -116,6 +116,8 @@ Abra `app/views/products/edit.html.erb`:
 ---
 Aqui usamos um `card`, outro componente clássico do Bootstrap, para destacar as informações do produto. Os botões de ação (editar, voltar, excluir) ganham cores diferentes para indicar o que cada um faz — o `btn-danger` (vermelho) para a ação de excluir é uma convenção bem comum.
 
+Repare que `link_to` gera um `<a>` (inline), mas `button_to` gera um `<form>` inteiro em volta do botão — e `<form>` é um elemento block, que quebra linha sozinho. Por isso passamos `form_class: "d-inline"`: ele faz esse `<form>` se comportar como inline, deixando o botão de excluir ao lado dos outros dois.
+
 Abra `app/views/products/show.html.erb`:
 
 ```erb
@@ -133,7 +135,7 @@ Abra `app/views/products/show.html.erb`:
   <div class="mt-3">
     <%= link_to "Edit this product", edit_product_path(@product), class: "btn btn-secondary" %>
     <%= link_to "Back to products", products_path, class: "btn btn-outline-secondary" %>
-    <%= button_to "Destroy this product", @product, method: :delete, class: "btn btn-danger" %>
+    <%= button_to "Destroy this product", @product, method: :delete, class: "btn btn-danger", form_class: "d-inline" %>
   </div>
 </div>
 ```
