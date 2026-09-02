@@ -7,10 +7,7 @@ Agora vamos criar o cadastro de Produtos. Assim como fizemos com Categoria, vamo
 O Produto vai ter um `name` (texto curto), uma `description` (texto longo) e uma `category:references`. Esse `references` é o que cria a associação com Categoria: ele adiciona um campo `category_id` na tabela de produtos, ligando cada produto a uma categoria.
 
 ```bash
-rails generate scaffold Product \
-  name:string \
-  description:text \
-  category:references
+rails generate scaffold Product name:string description:text category:references
 ```
 
 ---
