@@ -39,8 +39,13 @@ Agora sim, vamos criar o banco de dados que o projeto vai usar. Esse comando ain
 rails db:create
 ```
 
-Por fim, vamos ligar o servidor para ver o projeto rodando no navegador. Depois de rodar, acesse `http://localhost:3000`.
+Por fim, vamos ligar o servidor para ver o projeto rodando no navegador.
+
 
 ```bash
 rails server
 ```
+
+Agora, acesse `http://localhost:3000`.
+
+Pronto! Agora você tem um projeto Rails rodando no seu navegador.
