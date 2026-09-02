@@ -31,7 +31,7 @@ O HTML da nossa home page fica no arquivo `app/views/home/index.html.erb`. Abra 
 
 ---
 
-Vamos ligar o servidor de novo (se ele já não estiver rodando) para ver a home page no navegador.
+Vamos ligar o servidor de novo para ver a home page no navegador.
 
 ```bash
 rails server
