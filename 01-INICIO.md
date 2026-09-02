@@ -14,11 +14,14 @@ Toda vez que criamos um projeto novo, o Rails gera uma pasta com esse nome. Prec
 cd loja
 ```
 ---
+
 A partir de agora, vamos usar o VSCode para editar o projeto.
 Para abrir o VSCode, basta digitar `code .` na pasta do projeto.
 
 Dentro do VSCode, temos a opção de exibir o terminal. Nesse terminal, podemos rodar os comandos do Rails.
+
 ---
+
 Antes de criar o banco, precisamos dizer ao Rails como se conectar ao MySQL (usuário e senha). Abra o arquivo `config/database.yml` e, dentro do bloco `default: &default`, adicione as linhas de usuário e senha:
 
 ```
